@@ -10,9 +10,9 @@ let factorial n =
 
 let conflict () =
   print_endline
-    ("" (* <-- fill in some string here *) ^ (9 |> factorial |> string_of_int));
-  print_endline "";
+    ("Example merge conflict" (* <-- fill in some string here *) ^ (9 |> factorial |> string_of_int));
+  print_endline "Another conflict";
   (* ^ fill in some string here *)
-  print_endline "" (* <-- fill in some string here *)
+  print_endline "A final conflict!!" (* <-- fill in some string here *)
 
 let () = conflict ()
