@@ -1,0 +1,27 @@
+# dune build
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Shared cache location: /Users/parthsarkar/.cache/dune/db
+# Workspace root: /Users/parthsarkar/Desktop/silly-merge-conflict
+# Auto-detected concurrency: 8
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /Users/parthsarkar/.opam/cs3110-2024fa/bin/ocamlc.opt -config > /var/folders/90/lr2m98y97bs72l3_4dc5d75r0000gn/T/dune_3f0920_output
+$ (cd _build/default && /Users/parthsarkar/.opam/cs3110-2024fa/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -bin-annot-occurrences -I lib/.demo.objs/byte -no-alias-deps -opaque -o lib/.demo.objs/byte/demo.cmo -c -impl lib/demo.ml-gen)
+$ (cd _build/default && /Users/parthsarkar/.opam/cs3110-2024fa/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I test/.test_demo.eobjs/byte -no-alias-deps -opaque -o test/.test_demo.eobjs/byte/dune__exe__Test_demo.cmi -c -intf test/test_demo.mli)
+$ (cd _build/default && /Users/parthsarkar/.opam/cs3110-2024fa/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/demo.cma lib/.demo.objs/byte/demo.cmo)
+$ (cd _build/default && /Users/parthsarkar/.opam/cs3110-2024fa/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I bin/.main.eobjs/byte -I lib/.demo.objs/byte -no-alias-deps -opaque -o bin/.main.eobjs/byte/dune__exe__Main.cmi -c -intf bin/main.mli)
+$ (cd _build/default && /Users/parthsarkar/.opam/cs3110-2024fa/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -I lib/.demo.objs/byte -I lib/.demo.objs/native -intf-suffix .ml-gen -no-alias-deps -opaque -o lib/.demo.objs/native/demo.cmx -c -impl lib/demo.ml-gen)
+$ (cd _build/default && /Users/parthsarkar/.opam/cs3110-2024fa/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I test/.test_demo.eobjs/byte -I test/.test_demo.eobjs/native -intf-suffix .ml -no-alias-deps -opaque -o test/.test_demo.eobjs/native/dune__exe__Test_demo.cmx -c -impl test/test_demo.ml)
+$ (cd _build/default && /Users/parthsarkar/.opam/cs3110-2024fa/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I lib/.demo.objs/byte -I lib/.demo.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /Users/parthsarkar/.opam/cs3110-2024fa/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/demo.cmxa lib/.demo.objs/native/demo.cmx)
+$ (cd _build/default && /Users/parthsarkar/.opam/cs3110-2024fa/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -shared -linkall -I lib -o lib/demo.cmxs lib/demo.cmxa)
+$ (cd _build/default && /Users/parthsarkar/.opam/cs3110-2024fa/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe lib/demo.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)
+$ (cd _build/default && /Users/parthsarkar/.opam/cs3110-2024fa/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o test/test_demo.exe test/.test_demo.eobjs/native/dune__exe__Test_demo.cmx)

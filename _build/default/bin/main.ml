@@ -6,7 +6,6 @@ let factorial n =
         | true -> raise (Failure "Negative Inputs Undefined")
         | false -> factorial_aux (m * acc) (m - 1))
   in
-
   factorial_aux 1 n
 
 let conflict () =
