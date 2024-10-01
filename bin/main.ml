@@ -9,10 +9,8 @@ let factorial n =
   factorial_aux 1 n
 
 let conflict () =
-  print_endline
-    ("" (* <-- fill in some string here *) ^ (9 |> factorial |> string_of_int));
-  print_endline "";
-  (* ^ fill in some string here *)
-  print_endline "" (* <-- fill in some string here *)
+  print_endline ("Here's the factorial of 9" ^ (9 |> factorial |> string_of_int));
+  print_endline "Something random";
+  print_endline "Some else random"
 
 let () = conflict ()
